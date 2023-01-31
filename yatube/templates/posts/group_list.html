@@ -1,6 +1,8 @@
 {% extends 'base.html' %}
 {% block content %}
-  <title>Записи сообщества {{ title }}</title>
+  <head>
+    <title>Записи сообщества {{ title }}</title>
+  </head>
   <div class="container py-5">
     <h1>{{ title }}</h1>
         <p>
@@ -15,8 +17,7 @@
             Дата публикации: {{ post.pub_date|date:"d E Y" }}
           </li>
         </ul>
-        <p>{{ post.text }}</p>    
-        {% comment %} <a href="">все записи группы</a> {% endcomment %}
+        <p>{{ post.text }}</p>
         {% if not forloop.last %}<hr>{% endif %}
       {% endfor %}
   </div>
