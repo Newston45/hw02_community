@@ -7,6 +7,11 @@
   </head>
   <body>       
     <header>
+      <title>
+        {% block title %}
+          Последние обновления на сайте       
+        {% endblock %}
+      </title>
       {% include 'includes/header.html' %}
     </header>
     <main>
