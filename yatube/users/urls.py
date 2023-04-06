@@ -17,4 +17,9 @@ urlpatterns = [
         LoginView.as_view(template_name='users/login.html'),
         name='login'
     ),
+    path(
+        'contact_to_admin/',
+        LoginView.as_view(template_name='users/contact.html'),
+        name='contact'
+    ),
 ]
